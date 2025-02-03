@@ -11,7 +11,6 @@
 <body>
     <div class="container">
         <div class="sidebar">
-
             <ul>
                 <li>Питание 2x 12...48 VDC</li>
                 <li>4x RS-485 интерфейсы</li>
@@ -21,32 +20,62 @@
                 <li>2x Ethernet 10/100 Mbit/s</li>
             </ul>
         </div>
+
         <div class="content">
             <h2>Настройки сети</h2>
-            <div class="input-group">
-                <label for="host">Имя хоста</label>
-                <input type="text" id="host" value="default">
-            </div>
-            <div class="input-group">
-                <label for="ip">IP-адрес шлюза</label>
-                <input type="text" id="ip" value="">
-                <input type="checkbox" id="ip" name="Разрешить перенаправление">
+            <fieldset>
+                <div class="input-group">
+                    <label for="host">Имя хоста</label>
+                    <input type="text" id="host" value="default">
+                </div>
+            </fieldset> <!-- Закрываем fieldset -->
 
-            </div>
+            <fieldset>
+                <div class="input-group">
+                    <label for="use">Шлюз по умолчанию</label>
+                    <input type="checkbox" id="use" name="use">
+                    <label for="ip">IP-адрес шлюза</label>
+                    <input type="text" id="ip" value="">
+                </div>
+            </fieldset> <!-- Закрываем fieldset -->
+
             <button>Сохранить</button>
+
             <h3>Настройки интерфейса Lan1</h3>
             <div class="input-group">
+                <label for="use">Используется</label>
+                <input type="checkbox" id="use" name="use">
                 <label for="bond">Режим сети</label>
                 <select id="bond">
                     <option>Bond</option>
+                </select>
+                <input type="checkbox" id="use" name="use">
+                <label for="bond">Работает с...</label>
+                <select id="bond">
+                    <option>ни с кем нахуй</option>
+                    <option>LAN1</option>
+                    <option>LAN2</option>
+                </select>
+                <label for="web">Web-конфигуратор</label>
+                <input type="checkbox" id="web" name="web">
 
+                <div class="checkbox-group">
+                <label for="metric">Метрика</label>    
+                <label for="metric">Устанавливается в ручную</label>
+                <input type="checkbox" id="metric" name="metric">
+                </div>
+            </div>
+
+            <h4>Настройки Bonding</h4>
+            <div class="Bonding">
+                <label for="bondMode">Режим Bonding</label>
+                <select id="bondMode">
+                    <option>Bond</option>
+                    <option>Mode 2</option>
+                    <option>Mode 3</option>
                 </select>
             </div>
-            <h4>Настройки Bonding</h4>
-            <div class ="Bonding">
-                <label for="BondMode"></label>
-                <select id="bond"></select>
-            </div>
+
             <button>Сохранить</button>
         </div>
     </div>
