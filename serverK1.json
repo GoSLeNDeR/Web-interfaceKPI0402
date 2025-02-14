@@ -1,0 +1,541 @@
+{
+	"Guid": "0fb27fed-f702-4d5f-b44c-6e8ffc9c316e",
+	"FileName": "F:\\TestProjNew\\K7_NewTest_Palii\\DataCollectionServers\\0fb27fed-f702-4d5f-b44c-6e8ffc9c316e.json",
+	"PLCType": 263,
+	"Expanded": true,
+	"Name": "ConvK7",
+	"Desc": null,
+	"DcsSettings": {
+		"Name": "Устройство",
+		"Desc": null,
+		"Expanded": true,
+		"UseWatchDog": false,
+		"ServerHILevelEn": false,
+		"DcsTimeSettings": {
+			"TimeSynchronization": false,
+			"IpAdress": null,
+			"IpPort": 0,
+			"Guid": "6fdf191a-1a15-4f7d-85f0-3e6b6ddc5476",
+			"Name": "",
+			"Desc": ""
+		},
+		"DcsServersSettings": {
+			"Name": "Настройки сети",
+			"Desc": null,
+			"Expanded": false,
+			"MainController": {
+				"Priority": 0,
+				"Lans": [
+					{
+						"CollectionIPMask": [
+							{
+								"IP": "10.50.50.77",
+								"Mask": "255.255.255.0"
+							}
+						],
+						"Routes": [],
+						"NetMode": 1,
+						"Visibility": true,
+						"IsUse": true,
+						"EnableAccess": false,
+						"SlaveLan": {
+							"Name": "Lan2",
+							"Guid": "35bc323a-782e-42df-88a6-56ddcafe2139"
+						},
+						"MasterLan": null,
+						"WebServer": true,
+						"MacAddressManual": false,
+						"MacAddress": null,
+						"MetricManual": false,
+						"Metric": 10,
+						"BondSettings": {
+							"BondMode": 1,
+							"miimon": 100,
+							"arp_interval": 0,
+							"arp_ip_target": "",
+							"downdelay": 0,
+							"updelay": 0
+						},
+						"Guid": "a4915179-9c2b-4f68-8e3d-f9e8012aa14f",
+						"Name": "Lan1",
+						"Desc": ""
+					},
+					{
+						"CollectionIPMask": [
+							{
+								"IP": "10.50.51.77",
+								"Mask": "255.255.255.0"
+							}
+						],
+						"Routes": [],
+						"NetMode": 1,
+						"Visibility": false,
+						"IsUse": true,
+						"EnableAccess": false,
+						"SlaveLan": null,
+						"MasterLan": {
+							"Name": "Lan1",
+							"Guid": "a4915179-9c2b-4f68-8e3d-f9e8012aa14f"
+						},
+						"WebServer": true,
+						"MacAddressManual": false,
+						"MacAddress": null,
+						"MetricManual": false,
+						"Metric": 0,
+						"BondSettings": {
+							"BondMode": 0,
+							"miimon": 100,
+							"arp_interval": 0,
+							"arp_ip_target": null,
+							"downdelay": 0,
+							"updelay": 0
+						},
+						"Guid": "35bc323a-782e-42df-88a6-56ddcafe2139",
+						"Name": "Lan2",
+						"Desc": ""
+					}
+				],
+				"GatewayIsUse": false,
+				"Gateway": null,
+				"ForwardEn": false,
+				"HostName": "default",
+				"WebLogin": "",
+				"WebPass": "",
+				"Guid": "c3e76a2a-496b-4cf4-836f-717aab5a2d48",
+				"Name": "Контроллер К1",
+				"Desc": "Основной контроллер К1"
+			},
+			"RezervController": {
+				"Priority": 0,
+				"Lans": [],
+				"GatewayIsUse": false,
+				"Gateway": null,
+				"ForwardEn": false,
+				"HostName": "default",
+				"WebLogin": "",
+				"WebPass": "",
+				"Guid": "5d47c0f1-4e5c-45de-ac05-3e21f5850bb3",
+				"Name": "Резервный Контроллер К1",
+				"Desc": "Резервный контроллер К1"
+			}
+		},
+		"DcsModemSettings": {
+			"Name": null,
+			"Desc": null,
+			"MainController": {
+				"Sim1": {
+					"Enable": false,
+					"UseDHCP": false,
+					"IpAdress": null,
+					"Mask": null,
+					"Gateway": null,
+					"APN": null,
+					"UserName": null,
+					"Password": null,
+					"Guid": "ebc1914e-a2b1-470b-8f19-1fdca3c80c51",
+					"Name": "",
+					"Desc": ""
+				},
+				"Sim2": {
+					"Enable": false,
+					"UseDHCP": false,
+					"IpAdress": null,
+					"Mask": null,
+					"Gateway": null,
+					"APN": null,
+					"UserName": null,
+					"Password": null,
+					"Guid": "ac1d70c4-52f9-4c58-9c85-1bafcb30be37",
+					"Name": "",
+					"Desc": ""
+				}
+			},
+			"RezervController": {
+				"Sim1": {
+					"Enable": false,
+					"UseDHCP": false,
+					"IpAdress": null,
+					"Mask": null,
+					"Gateway": null,
+					"APN": null,
+					"UserName": null,
+					"Password": null,
+					"Guid": "e74db728-6324-4cde-95a1-a1df06046fbd",
+					"Name": "",
+					"Desc": ""
+				},
+				"Sim2": {
+					"Enable": false,
+					"UseDHCP": false,
+					"IpAdress": null,
+					"Mask": null,
+					"Gateway": null,
+					"APN": null,
+					"UserName": null,
+					"Password": null,
+					"Guid": "203efde0-b545-49c2-b9ce-c5f0efce4435",
+					"Name": "",
+					"Desc": ""
+				}
+			},
+			"Expanded": false
+		},
+		"TimeSettings": {
+			"FirstPriority": {
+				"GuidServer": "00000000-0000-0000-0000-000000000000",
+				"IP": null,
+				"TypeServerForTime": 5,
+				"Name": "NTP1",
+				"IsEnabled": false
+			},
+			"SecondPriority": {
+				"GuidServer": "00000000-0000-0000-0000-000000000000",
+				"IP": null,
+				"TypeServerForTime": 5,
+				"Name": "NTP2",
+				"IsEnabled": false
+			},
+			"ThirdPriority": {
+				"GuidServer": "00000000-0000-0000-0000-000000000000",
+				"IP": null,
+				"TypeServerForTime": 0,
+				"Name": "Нет",
+				"IsEnabled": false
+			},
+			"FourPriority": {
+				"GuidServer": "00000000-0000-0000-0000-000000000000",
+				"IP": null,
+				"TypeServerForTime": 0,
+				"Name": "Нет",
+				"IsEnabled": false
+			},
+			"IsServerSinhronization": false,
+			"Port": 123,
+			"IsStaticIP": false,
+			"IP": null,
+			"IsUTC": false,
+			"SelectedTimeZone": {
+				"NameID": null,
+				"TimeOffset": null
+			},
+			"Guid": "634a6df5-6fad-4994-a59b-ad4fc988ff67",
+			"Name": "",
+			"Desc": ""
+		},
+		"Modules": null,
+		"Leds": {
+			"Items": [
+				{
+					"LedIndex": 1,
+					"TypeControl": 3,
+					"I2CDriver": 0,
+					"Address_I2C": 35,
+					"Address": 1,
+					"Tag": {
+						"Name": "Светодиод 1",
+						"Desc": null,
+						"Expanded": "False",
+						"Value": {
+							"DefaultValue": null,
+							"QualityDefault": {
+								"Block": false,
+								"Substituted": false,
+								"NonTopical": false,
+								"Invalid": true,
+								"Overflow": false,
+								"EI": false
+							},
+							"Parent": null,
+							"Expanded": false,
+							"Desc": null,
+							"Name": null,
+							"Guid": "00000000-0000-0000-0000-000000000000"
+						},
+						"Links": [],
+						"ScaleMe": {
+							"IsScale": true,
+							"ProcessMin": 0,
+							"ProcessMax": 1,
+							"ObjectMin": 0,
+							"ObjectMax": 1
+						},
+						"IecTagProperties": [
+							{
+								"PropertyName": "BType",
+								"Value": "Digital"
+							},
+							{
+								"PropertyName": "Address",
+								"Value": "1"
+							}
+						],
+						"ByHand": false,
+						"UseBuffer": false,
+						"SourceTagGuid": "00000000-0000-0000-0000-000000000000",
+						"SourceTagName": null,
+						"Guid": "e0f9d1af-fa04-4ab6-9cb2-286c73989372",
+						"IsChecked": false,
+						"IsLink": false,
+						"Icon": "avares://DCSConfigurator/Images/flat/object.png",
+						"DAs": [
+							{
+								"BType": "BOOLEAN",
+								"Adress": null,
+								"Value": null,
+								"Expanded": false,
+								"Desc": null,
+								"Name": "stVal",
+								"MatrixGuid": "00000000-0000-0000-0000-000000000000",
+								"Guid": "3c75e6cc-f663-4698-afe0-cb70cd2b5f11",
+								"IsChecked": false,
+								"EnumVals": null,
+								"JournalMessages": null,
+								"fc": "ST",
+								"FullName": null,
+								"IED": null,
+								"LD": null,
+								"LN": null,
+								"DO": null,
+								"AdditionalField": null
+							},
+							{
+								"BType": "INT32",
+								"Adress": null,
+								"Value": null,
+								"Expanded": false,
+								"Desc": null,
+								"Name": "q",
+								"MatrixGuid": "00000000-0000-0000-0000-000000000000",
+								"Guid": "a16794db-14e0-49f2-9430-e4c4189b5498",
+								"IsChecked": false,
+								"EnumVals": null,
+								"JournalMessages": null,
+								"fc": "ST",
+								"FullName": null,
+								"IED": null,
+								"LD": null,
+								"LN": null,
+								"DO": null,
+								"AdditionalField": null
+							},
+							{
+								"BType": "Timestamp",
+								"Adress": null,
+								"Value": null,
+								"Expanded": false,
+								"Desc": null,
+								"Name": "t",
+								"MatrixGuid": "00000000-0000-0000-0000-000000000000",
+								"Guid": "de70020a-1ac9-47b9-b15e-b031e4a2d50f",
+								"IsChecked": false,
+								"EnumVals": null,
+								"JournalMessages": null,
+								"fc": "ST",
+								"FullName": null,
+								"IED": null,
+								"LD": null,
+								"LN": null,
+								"DO": null,
+								"AdditionalField": null
+							},
+							{
+								"BType": "VisString255",
+								"Adress": null,
+								"Value": null,
+								"Expanded": false,
+								"Desc": null,
+								"Name": "d",
+								"MatrixGuid": "00000000-0000-0000-0000-000000000000",
+								"Guid": "c4a58fed-9258-4501-ad6f-fa5d6ddc6a11",
+								"IsChecked": false,
+								"EnumVals": null,
+								"JournalMessages": null,
+								"fc": "DC",
+								"FullName": null,
+								"IED": null,
+								"LD": null,
+								"LN": null,
+								"DO": null,
+								"AdditionalField": null
+							}
+						],
+						"SelectedMatrix": null
+					},
+					"IsManual": false,
+					"Guid": "9f56e5ce-77f0-45ff-b4a9-f8d4a6e82bda",
+					"Name": "Светодиод 1",
+					"Desc": ""
+				}
+			],
+			"Name": "Leds",
+			"Desc": null,
+			"Expanded": true,
+			"Guid": "00000000-0000-0000-0000-000000000000",
+			"BusDevices": null,
+			"Type": 14
+		},
+		"DcsServersTransparentPort": {
+			"Items": [
+				{
+					"Name": "Новый прозрачный порт",
+					"Desc": null,
+					"Guid": "71239c2e-4976-47d8-a430-7c9cef6c6240",
+					"TransparentPortType": 1,
+					"IsStaticIP": false,
+					"IsAllowedIP": false,
+					"IP": null,
+					"AllowedIPs": null,
+					"Port": 4001,
+					"COMName": 0,
+					"Baudrate": 9600,
+					"Parity": 0,
+					"DataBits": 8,
+					"StopBits": 1,
+					"DelayToRead": 0,
+					"QueueCount": 10,
+					"ClientCount": 1
+				},
+				{
+					"Name": "Новый прозрачный порт",
+					"Desc": null,
+					"Guid": "d39aa157-795a-477a-864a-6fb0fbd85967",
+					"TransparentPortType": 1,
+					"IsStaticIP": false,
+					"IsAllowedIP": false,
+					"IP": null,
+					"AllowedIPs": null,
+					"Port": 4002,
+					"COMName": 1,
+					"Baudrate": 9600,
+					"Parity": 0,
+					"DataBits": 8,
+					"StopBits": 1,
+					"DelayToRead": 0,
+					"QueueCount": 10,
+					"ClientCount": 1
+				},
+				{
+					"Name": "Новый прозрачный порт",
+					"Desc": null,
+					"Guid": "99a39d41-b8a2-45e9-9e47-394b524f32c2",
+					"TransparentPortType": 1,
+					"IsStaticIP": false,
+					"IsAllowedIP": false,
+					"IP": null,
+					"AllowedIPs": null,
+					"Port": 4003,
+					"COMName": 2,
+					"Baudrate": 9600,
+					"Parity": 0,
+					"DataBits": 8,
+					"StopBits": 1,
+					"DelayToRead": 0,
+					"QueueCount": 10,
+					"ClientCount": 1
+				},
+				{
+					"Name": "Новый прозрачный порт",
+					"Desc": null,
+					"Guid": "1a72def0-26bd-4220-9390-bf0a6c954094",
+					"TransparentPortType": 1,
+					"IsStaticIP": false,
+					"IsAllowedIP": false,
+					"IP": null,
+					"AllowedIPs": null,
+					"Port": 4004,
+					"COMName": 3,
+					"Baudrate": 9600,
+					"Parity": 0,
+					"DataBits": 8,
+					"StopBits": 1,
+					"DelayToRead": 0,
+					"QueueCount": 10,
+					"ClientCount": 1
+				}
+			],
+			"Name": "Прозрачный порт",
+			"Desc": "",
+			"Expanded": true,
+			"AllowDrop": false
+		}
+	},
+	"DcsDevices": {
+		"Name": null,
+		"Desc": null,
+		"Clients": {
+			"Name": null,
+			"Desc": null,
+			"Items": [],
+			"Expanded": false,
+			"AllowDrop": false
+		},
+		"Servers": {
+			"Name": null,
+			"Desc": null,
+			"Items": [],
+			"Expanded": false
+		},
+		"Expanded": false
+	},
+	"DIO": {
+		"Guid": "5e7b8c0e-020c-4e8a-8425-487f550127ed",
+		"Name": "Дискретные входы/выходы",
+		"Desc": null,
+		"Expanded": false,
+		"Inputs": {
+			"Name": "Входы",
+			"Desc": null,
+			"Expanded": false,
+			"Tags": [],
+			"Guid": "d004eab4-17b8-4617-85f2-f30f06828cbe",
+			"LnClass": null,
+			"inst": null,
+			"prefix": null,
+			"IsLn0": false,
+			"IED": "ConvK7",
+			"LD": "Дискретные входы/выходы",
+			"LN": "Входы",
+			"IsVariables": false
+		},
+		"Outputs": {
+			"Name": "Выходы",
+			"Desc": null,
+			"Expanded": false,
+			"Tags": [],
+			"Guid": "94a4151a-224d-407f-985a-893fac1fb521",
+			"LnClass": null,
+			"inst": null,
+			"prefix": null,
+			"IsLn0": false,
+			"IED": "ConvK7",
+			"LD": "Дискретные входы/выходы",
+			"LN": "Входы",
+			"IsVariables": false
+		}
+	},
+	"Variables": {
+		"IecTegs": [],
+		"BusDevices": null,
+		"Type": 13,
+		"Guid": "9288e18a-dc38-466f-b16f-74e15a86dcfb",
+		"Name": "",
+		"Desc": ""
+	},
+	"IEDeviceTemplates": {
+		"Items": null,
+		"Guid": "4e5ab9ad-9979-4bb0-a57f-5c38b23e5f5d",
+		"Name": "",
+		"Desc": ""
+	},
+	"RezervOn": false,
+	"RezervMode": null,
+	"Online": false,
+	"DCSTemplateName": "K7",
+	"Fbds": {
+		"Name": "Логические блоки",
+		"Desc": null,
+		"Expanded": false,
+		"Guid": "00000000-0000-0000-0000-000000000000",
+		"Items": []
+	}
+}
