@@ -19,6 +19,13 @@
                 <li>USB интерфейс</li>
                 <li>2x Ethernet 10/100 Mbit/s</li>
             </ul>
+            <h1>Настройки прозрачных портов</h1>
+            <ul>
+                <li> Новый прозрачный порт(RS_485_1)</li>
+                <li> Новый прозрачный порт(RS_485_2)</li>
+                <li> Новый прозрачный порт(RS_485_3)</li>
+                <li> Новый прозрачный порт(RS_485_4)</li>
+            </ul>
         </div>
 
         <div class="content">
@@ -37,10 +44,10 @@
                     <label for="ip">IP-адрес шлюза</label>
                     <input type="text" id="ip" value="">
                 </div>
-            </fieldset> <!-- Закрываем fieldset -->
+                <button>Сохранить</button>
+            </fieldset>
 
-            <button>Сохранить</button>
-
+            <fieldset>
             <h3>Настройки интерфейса Lan1</h3>
             <div class="input-group">
                 <label for="use">Используется</label>
@@ -60,12 +67,17 @@
                 <input type="checkbox" id="web" name="web">
 
                 <div class="checkbox-group">
-                <label for="metric">Метрика</label>    
+                <label for="metric">Метрика</label>
+                <label for="metric">Устанавливается в ручную</label>
+                <input type="checkbox" id="metric" name="metric">
+                </div>
+
+                <div class="checkbox-group">
+                <label for="metric">MAC-адрес</label>
                 <label for="metric">Устанавливается в ручную</label>
                 <input type="checkbox" id="metric" name="metric">
                 </div>
             </div>
-
             <h4>Настройки Bonding</h4>
             <div class="Bonding">
                 <label for="bondMode">Режим Bonding</label>
@@ -75,8 +87,42 @@
                     <option>Mode 3</option>
                 </select>
             </div>
-
+            <div class="input-group">
+            <label for="ip">minimon</label>
+            <input type="text" id="ip" value="">
+                <label for="arp_interval">arp_interval</label>
+                <input type="text" id="arp_interval" value="">
+                    <label for="arp_ip_target">arp_ip_target</label>
+                    <input type="text" id="arp_ip_target" value="">
+                        <label for="downdelay">downdelay</label>
+                        <input type="text" id="downdelay" value="">
+                            <label for="updelay">updelay</label>
+                            <input type="text" id="updelay" value="">
+            </div>
             <button>Сохранить</button>
+            </fieldset>
+            <h4>IP-адреса Lan1</h4>
+            <table><tr>
+                <td>IP-aдрес</td>
+                <td>Маска</td>
+                <td>Действие</td>
+            </tr>
+            <tr>
+                <td>10.50.55.200</td>
+                <td>255.255.255.0</td>
+                <td><button>Удалить</button></td>
+            </tr>
+            <tr>
+                <td>10.50.55.200</td>
+                <td>255.255.255.0</td>
+                <td><button>Удалить</button></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="ip" value=""></td>
+                <td><input type="text" id="ip" value=""></td>
+                <td><button>Добавить</button></td>
+            </tr>
+            </table>
         </div>
     </div>
 </body>
