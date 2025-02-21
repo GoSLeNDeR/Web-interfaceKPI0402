@@ -16,19 +16,47 @@
             padding: 20px;
         }
         .content {
-            width: 60%;
-            padding: 20px;
+            width: 450px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         h2 {
             color: #003399;
+            width: 22px;
         }
-        label, input, select, button {
+
+        .container2 {
+            width: 300px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            background: #f9f9f9;
+        }
+        .container2 label {
             display: block;
-            margin-bottom: 10px;
-            width: 100%;
+            margin-top: 5px;
         }
-        .input-group {
-            margin-bottom: 15px;
+        .container2 input, .container2 select {
+            width: 100%;
+            padding: 5px;
+            margin-top: 3px;
+        }
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+        }
+        .checkbox-group input {
+            width: auto;
+            margin-right: 5px;
+        }
+        .button {
+            margin-top: 10px;
+            padding: 5px 10px;
+            background: #ddd;
+            border: 1px solid #999;
+            cursor: pointer;
         }
 /*body {
     font-family: Arial, sans-serif;
