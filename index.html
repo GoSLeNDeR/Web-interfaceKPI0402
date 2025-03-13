@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename='Styles.css') }}">
+    <title>Главная страница</title>
+    <script src="Script.js" async></script>
+</head>
+<body>
+<div >
+    <div class="sidebar">
+        <ul>
+            <li>Питание 2x 12...48 VDC</li>
+            <li>4x RS-485 интерфейсы</li>
+            <li>Световой индикатор</li>
+            <li>Кнопка сброса</li>
+            <li>USB интерфейс</li>
+            <li>2x Ethernet 10/100 Mbit/s</li>
+        </ul>
+        <h2>Настройки прозрачных портов</h2>
+        <ul>
+            <li> Новый прозрачный порт(RS_485_1)</li>
+            <li> Новый прозрачный порт(RS_485_2)</li>
+            <li> Новый прозрачный порт(RS_485_3)</li>
+            <li> Новый прозрачный порт(RS_485_4)</li>
+        </ul>
+    </div>
+
+    <div class="container">
+         <h3>Настройки сети</h3>
+        <h4>Основной контроллер</h4>
+        <label for="description">Описание</label>
+        <input type="text" name="description" id="description" value="" >
+
+        <label for="hostname">Имя хоста</label>
+        <input type="text" id="hostname" value="default">
+
+        <label for="default_gateway">Шлюз по умолчанию</label>
+        <input type="text" id="default_gateway">
+
+        <label for="ip_address">IP-адрес шлюза</label>
+        <input type="text" id="ip_address" value="10.50.50.1">
+
+        <div class="checkbox-group">
+            <input type="checkbox" id="allow_forwarding">
+            <label for="allow_forwarding">Разрешить перенаправление</label>
+        </div>
+
+        <button class="button">Сохранить</button>
+    </div>
+
+    <div class="container">
+        <h4>Настройки интерфейса Lan1</h4>
+        <div class="checkbox-group">
+            <input type="checkbox" id="enabled">
+            <label for="enabled">Используется</label>
+        </div>
+        <label for="network_mode">Режим сети</label>
+        <select id="network_mode">
+            <option>Bond</option>
+        </select>
+        <label for="working_with">Работает с...</label>
+        <select id="working_with">
+            <option>Lan2</option>
+        </select>
+        <div class="checkbox-group">
+            <input type="checkbox" id="web_config">
+            <label for="web_config">Web-конфигуратор</label>
+        </div>
+        <div class="checkbox-group">
+            <input type="checkbox" id="metric">
+            <label for="metric">Метрика</label>
+        </div>
+        <div class="checkbox-group">
+            <input type="checkbox" id="mac_address">
+            <label for="mac_address">MAC-адрес</label>
+        </div>
+        <h4>Настройки Bonding</h4>
+        <label for="bond_mode">BondMode</label>
+        <select id="bond_mode">
+            <option>Active Backup</option>
+        </select>
+        <label for="miimon">miimon</label>
+        <input type="text" id="miimon" value="100">
+        <label for="arp_interval">arp_interval</label>
+        <input type="text" id="arp_interval" value="0">
+        <label for="arp_ip_target">arp_ip_target</label>
+        <input type="text" id="arp_ip_target" value="0">
+        <label for="downdelay">downdelay</label>
+        <input type="text" id="downdelay" value="0">
+        <label for="updelay">updelay</label>
+        <input type="text" id="updelay" value="0">
+        <button class="button">Сохранить</button>
+    </div>
+
+    <div class="container">
+        <h4>IP-адреса Lan1</h4>
+        <table>
+            <tr>
+                <th>IP-адрес</th>
+                <th>Маска</th>
+                <th>Действие</th>
+            </tr>
+            <tr>
+                <td>10.50.50.77</td>
+                <td>255.255.255.0</td>
+                <td><button>Удалить</button></td>
+            </tr>
+            <tr>
+                <td>192.168.0.1</td>
+                <td>255.255.255.0</td>
+                <td><button>Удалить</button></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="container">
+        <h4>Маршрутизация Lan1</h4>
+        <table>
+            <tr>
+                <th>IP-адрес</th>
+                <th>Маска</th>
+                <th>Шлюз</th>
+                <th>Действие</th>
+            </tr>
+            <tr>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+                <td><button>Удалить</button></td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>

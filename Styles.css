@@ -1,0 +1,76 @@
+      body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin: auto;
+            width: 400px;
+            border: 1px solid #ccc;
+            padding: 15px;
+            background: #f9f9f9;
+
+        }
+        .container label {
+            display: block;
+            margin-top: 5px;
+        }
+        .container input, .container select {
+            width: 100%;
+            padding: 5px;
+            margin-top: 3px;
+        }
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+        }
+        .checkbox-group input {
+            width: auto;
+            margin-right: 5px;
+        }
+        .button {
+            margin-top: 10px;
+            padding: 5px 10px;
+            background: #ddd;
+            border: 1px solid #999;
+            cursor: pointer;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 5px;
+            text-align: left;
+        }
+/*body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
